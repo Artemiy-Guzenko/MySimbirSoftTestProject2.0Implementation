@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>DB</title>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+</head>
+<body>
+
+<div>>
+    <table>
+        <tr>
+            <th>PATH</th>
+            <th>WORD</th>
+            <th>COUNT</th>
+        </tr>
+        <tr th:each="url : ${listAllUrls}">
+            <td th:text="${url.getPath()}">WORD</td>
+            <td th:text="${url.getWord()}">COUNT</td>
+            <td th:text="${url.getCount()}">COUNT</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>

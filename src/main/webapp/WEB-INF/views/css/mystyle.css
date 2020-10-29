@@ -1,0 +1,121 @@
+body{
+    margin:0;
+    padding:0;
+    line-height: 1.5em;
+}
+
+input[type=text] {
+    border: 2px solid red;
+    border-radius: 4px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+b{font-size: 110%;}
+em{color: red;}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid purple;
+}
+
+thead th:nth-child(1) {
+    width: 30%;
+}
+
+thead th:nth-child(2) {
+    width: 20%;
+}
+
+thead th:nth-child(3) {
+    width: 15%;
+}
+
+thead th:nth-child(4) {
+    width: 35%;
+}
+
+th, td {
+    padding: 20px;
+}
+
+#maincontainer{
+    width: 840px; /*Width of main container*/
+    margin: 0 auto; /*Center container on page*/
+}
+
+#topsection{
+    background: #EAEAEA;
+    height: 90px; /*Height of top section*/
+}
+
+#topsection h1{
+    margin: 0;
+    padding-top: 15px;
+}
+
+#contentwrapper{
+    float: left;
+    width: 100%;
+}
+
+#contentcolumn{
+    margin-left: 200px; /*Set left margin to LeftColumnWidth*/
+}
+
+#leftcolumn{
+    float: left;
+    width: 200px; /*Width of left column*/
+    margin-left: -840px; /*Set left margin to -(MainContainerWidth)*/
+    background: #C8FC98;
+}
+
+#footer{
+    clear: left;
+    width: 100%;
+    background: black;
+    color: #FFF;
+    text-align: center;
+    padding: 4px 0;
+}
+
+#footer a{
+    color: #FFFF80;
+}
+
+.innertube{
+    margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+    margin-top: 0;
+}
+
+/* ####### responsive layout CSS ####### */
+
+@media (max-width: 840px){ /* responsive layout break point */
+    #maincontainer{
+        width: 100%;
+    }
+
+    #contentwrapper{
+        float: none;
+    }
+
+    #leftcolumn{
+        float: none;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #contentcolumn{
+        margin-left: 0;
+    }
+}

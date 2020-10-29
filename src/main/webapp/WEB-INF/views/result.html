@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+</head>
+<body>
+
+<h1>Результат подсчета</h1>
+
+<div>>
+    <table>
+        <tr>
+            <th>WORD</th>
+            <th>COUNT</th>
+        </tr>
+        <tr th:each="entry : ${resultMap.entrySet()}">
+            <td th:text="${entry.key}">WORD</td>
+            <td th:text="${entry.value}">COUNT</td>
+        </tr>
+    </table>
+</div>
+
+
+</body>
+</html>
